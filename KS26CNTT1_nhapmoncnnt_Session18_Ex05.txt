@@ -1,0 +1,44 @@
+Bài 5: Tối ưu tiện ích mở rộng cho hệ thống điều phối vận tải
+Phần 1. Phân tích
+Vai trò của JSON Viewer
+JSON Viewer là tiện ích giúp hiển thị dữ liệu JSON rõ ràng, dễ đọc thay vì một đoạn dữ liệu dài và khó theo dõi.
+Khi hệ thống nhận dữ liệu GPS từ API, kỹ sư có thể dùng JSON Viewer để:
+- Xem thông tin tọa độ xe, mã xe và thời gian cập nhật
+- Kiểm tra dữ liệu bị thiếu hoặc sai định dạng
+- Dễ dàng tìm lỗi khi API trả về dữ liệu không đúng
+
+Phần 2. Triển khai
+1. Lựa chọn 5 tiện ích mở rộng
+- Nhóm Dev Suite:
++ JSON Viewer: Hiển thị và định dạng dữ liệu JSON từ API
++ ModHeader: Hỗ trợ chỉnh sửa HTTP Request Headers khi kiểm thử API
+
+- Nhóm Productivity:
+ + ColorZilla: Lấy mã màu trực tiếp từ giao diện website
+ + OneTab: Gom các tab đang mở thành danh sách để giảm số lượng tab hoạt động
+
+- Nhóm Security:
++ uBlock Origin Lite: Chặn quảng cáo và một số nội dung theo dõi không mong muốn
+
+
+2. Cách ghim Extensions lên Toolbar
+- Bước 1: Mở Chrome và truy cập chrome://extensions
+- Bước 2: Cài đặt 5 tiện ích cần sử dụng
+- Bước 3: Nhấn biểu tượng hình mảnh ghép trên thanh công cụ
+- Bước 4: Nhấn biểu tượng ghim bên cạnh từng tiện ích
+- Bước 5: Kiểm tra các tiện ích đã xuất hiện trên Toolbar
+3. Thiết lập Site Access
+
+Để hạn chế quyền truy cập dữ liệu:
+- Mở chrome://extensions
+- Chọn Details của từng tiện ích
+- Tìm mục Site access
+- Chọn On click để tiện ích chỉ hoạt động khi người dùng chủ động nhấn vào
+- Không cấp quyền truy cập tất cả website nếu không cần thiết
+Phần 3. Kiểm thử
+Nếu trình duyệt bị lag khi mở biểu đồ Waterfall, thực hiện kiểm tra:
+- Bước 1: Nhập chrome://extensions vào thanh địa chỉ
+- Bước 2: Tắt lần lượt từng Extension
+- Bước 3: Kiểm tra tốc độ trình duyệt sau mỗi lần tắt
+- Bước 4: Xác định tiện ích gây tốn tài nguyên và gỡ bỏ nếu không cần thiết
+- Bước 5: Chỉ giữ lại những tiện ích thực sự phục vụ công việc
