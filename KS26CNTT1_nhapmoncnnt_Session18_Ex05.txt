@@ -1,8 +1,7 @@
 Bài 5: Tối ưu tiện ích mở rộng cho hệ thống điều phối vận tải
 Phần 1. Phân tích
 Vai trò của JSON Viewer
-JSON Viewer là tiện ích giúp hiển thị dữ liệu JSON rõ ràng, dễ đọc thay vì một đoạn dữ liệu dài và khó theo dõi.
-Khi hệ thống nhận dữ liệu GPS từ API, kỹ sư có thể dùng JSON Viewer để:
+JSON Viewer dùng để:
 - Xem thông tin tọa độ xe, mã xe và thời gian cập nhật
 - Kiểm tra dữ liệu bị thiếu hoặc sai định dạng
 - Dễ dàng tìm lỗi khi API trả về dữ liệu không đúng
